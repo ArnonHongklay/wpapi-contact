@@ -34,7 +34,7 @@ if (is_plugin_active('contact-form-7/wp-contact-form-7.php')) {
 function register_rest_routes()
 {
     if (!class_exists('WP_REST_Contact_Form_7_Controller')) {
-        require_once plugin_dir_path(__FILE__) . '/lib/endpoints/class-wp-api-contact-controller.php';
+        require_once plugin_dir_path(__FILE__) . '/includes/endpoints/class-wp-api-contact-controller.php';
     }
 
     $controller = new WP_REST_Contact_Form_7_Controller();
