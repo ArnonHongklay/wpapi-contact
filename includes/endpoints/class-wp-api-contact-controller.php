@@ -17,7 +17,7 @@ if (!class_exists('WPCF7_ContactForm')) {
 class WP_REST_Contact_Form_7_Controller extends WP_REST_Controller
 {
     protected $rest_base = "forms";
-    protected $namespace = "wp-api-contact/v1";
+    protected $namespace = "api-contact/v1";
     protected $post_type = WPCF7_ContactForm::post_type;
 
     public function register_routes()
